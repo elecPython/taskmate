@@ -7,12 +7,7 @@ Django==3.0.8
 django-crispy-forms==1.9.2
 django-environ==0.4.5
 django-heroku==0.3.1
-ipykernel==5.3.4
-ipython==7.17.0
-ipython-genutils==0.2.0
 jedi==0.17.2
-jupyter-client==6.1.6
-jupyter-core==4.6.3
 parso==0.7.1
 pickleshare==0.7.5
 prompt-toolkit==3.0.5

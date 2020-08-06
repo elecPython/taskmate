@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+  <title>Logout - TaskMate</title>
+{% endblock title %}
+
+{% block content %}
+  <div class="container">    
+    </br>
+    <h4>Logged out of TaskMate, Thank you for using us</h4>
+    
+    {% if messages %}
+      {% for message in messages %}
+        <div class="alert alert-info" role="alert">
+          {{ message }}
+        </div>     
+      {% endfor %}
+      
+    {% endif %}
+    <form method="POST" class="mt-5 col-6">
+        {% csrf_token %}
+        {{ form|crispy }}
+
+    </form>    
+    
+
+  </dive>
+{% endblock content %}
